@@ -1,0 +1,140 @@
+
+.ftco-footer {
+    font-size: 16px;
+    background: $black;
+    z-index: 0;
+
+    .ftco-footer-logo {
+        text-transform: uppercase;
+        letter-spacing: .1em;
+    }
+
+    .ftco-footer-widget {
+        h2 {
+            color: $white;
+            font-size: 22px;
+            font-weight: normal;
+        }
+
+        ul {
+            li {
+                margin-bottom: 10px;
+
+                a {
+                    color: rgba(255, 255, 255, .6);
+
+                    span {
+                        // color: $white;
+                        color: rgba(255, 255, 255, .6);
+                    }
+                }
+            }
+        }
+
+        .btn-primary {
+            background: $white !important;
+            border: 2px solid $white !important;
+
+            &:hover {
+                background: $white;
+                border: 2px solid $white !important;
+            }
+        }
+    }
+
+    p {
+        color: rgba($white, .7);
+    }
+
+    a {
+        color: rgba($white, .7);
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    .ftco-heading-2 {
+        font-size: 17px;
+        font-weight: 400;
+        color: $black;
+    }
+}
+
+
+.ftco-footer-social {
+    li {
+        list-style: none;
+        display: inline-block;
+
+        a {
+            height: 40px;
+            width: 40px;
+            display: block;
+            float: left;
+            background: rgba($white, .1);
+            border-radius: 50%;
+            position: relative;
+
+            span {
+                position: absolute;
+                font-size: 16px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+}
+
+
+.footer-link-section {
+    ul {
+        padding: 0;
+
+        li {
+
+            &, > a {
+                display: table;
+                line-height: 1.5;
+                margin-bottom: 15px;
+            }
+
+            span {
+                color: rgba($white, .7);
+            }
+
+            .icon, .text {
+                display: table-cell;
+                vertical-align: top;
+            }
+
+            .icon {
+                width: 40px;
+                font-size: 18px;
+                padding-top: 2px;
+                color: rgba($white, 1);
+            }
+
+        }
+    }
+}
+
+
+.footer-small-nav {
+    > li {
+        display: inline-block;
+
+        a {
+            margin: 0 10px 10px 0;
+
+            &:hover, &:focus {
+                color: $primary;
+            }
+        }
+    }
+}

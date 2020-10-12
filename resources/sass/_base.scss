@@ -1,0 +1,54 @@
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin transition($transition) {
+    -moz-transition:    all $transition ease;
+    -o-transition:      all $transition ease;
+    -webkit-transition: all $transition ease;
+    -ms-transition: 	all $transition ease;
+    transition:         all $transition ease;
+}
+
+html {
+    overflow-x: hidden;
+}
+body {
+    font-family: $font-primary;
+    background: $white;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #6a7695;
+    &.menu-show {
+        overflow: hidden;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+a {
+    transition: .3s all ease;
+    color: $primary;
+    &:hover, &:focus {
+        text-decoration: none;
+        color: $primary;
+        outline: none !important;
+    }
+}
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+    line-height: 1.5;
+    color: #263b5e;
+    font-weight: 400;
+}
+
+.text-primary {
+    color: $primary!important;
+}
+

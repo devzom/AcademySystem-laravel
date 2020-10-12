@@ -1,0 +1,167 @@
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Variables
+@import 'variables';
+@import 'base';
+@import 'header';
+@import 'homepage';
+@import 'footer';
+@import 'button';
+
+
+// Utilities
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+@import "../../public/css/animate.css";
+
+
+.bg-light {
+    background: #f5f4fb!important;
+}
+
+.bg-dark {
+    background: #191919!important;
+}
+
+.bg-primary{
+    background: $primary;
+}
+
+
+
+
+.page{
+    width: 100%;
+    margin-bottom: 7em;
+    border-radius: 5px;
+    padding: 30px;
+    .heading{
+        font-weight: 700;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+
+// USEFUL CODE
+.aside-stretch{
+    background: lighten($primary,10%);
+    &:after{
+        position: absolute;
+        top: 0;
+        right: 100%;
+        bottom: 0;
+        content: '';
+        width: 360%;
+        background: lighten($primary,10%);
+        // background: #333644;
+    }
+    @include media-breakpoint-down(sm){
+        background: transparent;
+        &:after{
+            background: transparent;
+            display: none;
+        }
+    }
+}
+
+
+.form-control {
+    height: 52px!important;
+    background: $white!important;
+    color: $black!important;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: none!important;
+    &:focus, &:active {
+        border-color: $black;
+    }
+}
+textarea.form-control {
+    height: inherit!important;
+}
+.ftco-vh-100 {
+    height: 100vh;
+    @include media-breakpoint-down(lg) {
+        height: inherit;
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+}
+
+.ftco-animate {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.bg-primary {
+    background: $primary!important;
+}
+
+
+
+.ftco-section {
+    padding: 2em 0;
+    position: relative;
+    @include media-breakpoint-down(sm){
+        padding: 4em 0;
+    }
+}
+
+.ftco-no-pt{
+    padding-top: 0 !important;
+}
+.ftco-no-pb{
+    padding-bottom: 0 !important;
+}
+
+.ftco-bg-dark {
+    background: #3c312e;
+}
+
+.media {
+    .ftco-icon {
+        width: 100px;
+        span {
+            color: $primary;
+        }
+    }
+}
+
+
+.heading-section{
+    position: relative;
+
+    .subheading{
+        font-size: 16px;
+        font-weight: 700;
+        display: block;
+        margin-bottom: 5px;
+        color: $primary;
+    }
+    h2{
+        font-size: 50px;
+        font-weight: 700;
+        span{
+            font-weight: 400;
+        }
+        @include media-breakpoint-down(sm){
+            font-size: 38px;
+        }
+    }
+    &.heading-section-white{
+        .subheading{
+            color: rgba(255,255,255,.9) !important;
+        }
+        h2{
+            color: $white;
+        }
+        p{
+            color: rgba(255,255,255,.9);
+        }
+    }
+}
+

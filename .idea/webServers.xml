@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d10eb0e9-a506-4449-860e-98225aa62bd4" name="laravel.jakubzomerfeld" url="https://www.laravel.jakubzomerfeld.pl">
+        <fileTransfer rootFolder="/domains/jakubzomerfeld.pl/public_html/laravel" host="s15.zenbox.pl" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
